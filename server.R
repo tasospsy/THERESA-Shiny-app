@@ -6,7 +6,7 @@
 library(tidyverse)
 library(shiny)
 library(plotly)
-
+library(ggtext)
 ## load files and necessary objects
 source(url("https://raw.githubusercontent.com/tasospsy/THERESA-Shiny-app/main/prep.R"))
 # Define server logic required to draw a histogram
@@ -92,8 +92,8 @@ shinyServer(function(input, output) {
                      fct_relevel(J, 'J = 7', 'J = 15') +
                      fct_relevel(K, 'K = 4', 'K = 8', 'K = 12'),
                    scales = 'free_x') + 
-        labs(title = "<span style = 'color:darkblue;font-size:19px'> **π Vs π&#770;**</span> & 
-       <span style = 'color:darkred;font-size:19px'>**π<sub>+</sub> Vs π&#770;<sub>+</sub>**</span>",
+        labs(title = "<span style = 'color:darkblue;font-size:19px'> π Vs π&#770;</span> & 
+       <span style = 'color:darkred;font-size:19px'>π<sub>+</sub> Vs π&#770;<sub>+</sub></span>",
        x = "Number of estimated classes",
        y = "Kullback - Leibler distance") +
         theme_bw() + theme1 +
