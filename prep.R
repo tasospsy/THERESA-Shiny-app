@@ -24,10 +24,10 @@ theme1 <- theme(plot.background = element_rect(fill = "white", color = NA), #bac
                 legend.position = "bottom", # legend down
                 #legend.title = element_blank(), # remove legend title,
                 legend.text = element_text(colour = "black", size = 9),
-                plot.title = element_markdown(size = 12,hjust = 0,lineheight = 1, 
+                #plot.title = element_markdown(size = 12,hjust = 0,lineheight = 1, 
                                               #color = "black", family = 'mono'),
-                                              strip.background =element_rect(fill="grey100")
-                ))
+                strip.background =element_rect(fill="grey100")
+                )
 
 ## which is the maximum percentage of estimated K that is 
 ## picked by each IC, within each condition of the 24?

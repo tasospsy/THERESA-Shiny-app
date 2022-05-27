@@ -5,6 +5,7 @@
 
 library(shiny)
 library(bslib)
+library(plotly)
 # Define UI for application that draws a histogram
 shinyUI(fluidPage(
   theme = bs_theme(version = 5, bootswatch = "journal"),
