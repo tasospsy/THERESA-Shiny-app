@@ -3,7 +3,10 @@
 ## Tasos Psychogyiopoulos
 ## c.27/05/2022
 
-library(tidyverse)
+library(dplyr)
+library(tidyr)
+library(forcats)
+library(ggplot2)
 library(shiny)
 library(plotly)
 library(ggtext)
