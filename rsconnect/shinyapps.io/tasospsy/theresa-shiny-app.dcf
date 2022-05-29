@@ -1,0 +1,11 @@
+name: theresa-shiny-app
+title:
+username:
+account: tasospsy
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6391982
+bundleId: 5956640
+url: https://tasospsy.shinyapps.io/theresa-shiny-app/
+when: 1653820372.08502
+lastSyncTime: 1653820372.08503

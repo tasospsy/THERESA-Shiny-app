@@ -38,7 +38,7 @@ shinyServer(function(input, output) {
         labs(title = "",
              x = "Number of estimated classes",
              y = "Information Criterion (IC)")+
-        theme_minimal() + theme1 +
+        theme_bw() + theme1 +
         theme(legend.position='none',
               axis.text.x = element_text(size=12, color = "black")),
       tooltip = c('est.K', 'n'))
@@ -67,14 +67,14 @@ shinyServer(function(input, output) {
                    color = "black", size=.4) +
         ## Π+ smooth line and points
         geom_point(aes(x = est.K, y = KL.P), 
-                   size = .6, color = 'lightblue',alpha = .4) +
+                   size = 2, color = 'lightblue',alpha = .4) +
         geom_smooth(aes(x = est.K, y = KL.P), method = 'loess', 
-                    color = 'darkblue', size = .8) +
+                    color = 'darkblue', size = .6) +
         ## Π smooth line and points
         geom_point(aes(x = est.K, y = KL.Pp), 
-                   size = .6, color = 'pink', alpha = .5) +
+                   size = 2, color = 'pink', alpha = .5) +
         geom_smooth(aes(x = est.K, y = KL.Pp), method = 'loess', 
-                    color = 'darkred', size = .8) +
+                    color = 'darkred', size = .6) +
         ## Line and point for ICs: most likely picked model
         #geom_vline(data = count.ICs.K %>%
         #               filter(IC %in% ICf) %>% 

@@ -35,6 +35,11 @@ shinyUI(fluidPage(
                          choices = c('AIC', 'AIC3', 'BIC', 'aBIC' ),
                          selected = c('AIC', 'AIC3', 'BIC', 'aBIC' )
       ),
+      #checkboxGroupInput(inputId = 'which',
+      #                   label = 'Select output',
+      #                   choices = c('Class enumeration', 'π divergence' ),
+      #                   selected = c('Class enumeration' )
+      #),
       width = 2
     ),
     mainPanel(
