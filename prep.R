@@ -12,7 +12,9 @@ load(url("https://github.com/tasospsy/THERESA-Shiny-app/blob/main/data/out-td.Rd
 ## Visualization manual theme
 colors <- RColorBrewer::brewer.pal(9, 'Paired')[c(3,4,7,8)]
 theme1 <- theme(plot.background = element_rect(fill = "white", color = NA), #background color
-                text = element_text(family = "Courier New", color = "black"), # color of all text in the plot 
+                text = element_text(
+                  #family = "Courier New", 
+                                    color = "black"), # color of all text in the plot 
                 #plot.title = element_text(hjust = 0.5, color = "black", size = 12), # specs of the title
                 strip.text = element_text(colour = "black", size = 14), # specs of the text inside plot
                 panel.grid.major.x = element_line(size = .5), # change the grid layout
