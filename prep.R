@@ -21,12 +21,12 @@ theme1 <- theme(plot.background = element_rect(fill = "white", color = NA), #bac
                 panel.grid.major.y = element_line(size = .5), # change the grid layout
                 panel.grid.minor.x = element_blank(), # remove the grid layout
                 panel.grid.minor.y = element_blank(), # remove the grid layout
-                axis.text=element_text(size=10, color = "black"), # specs of the text in axis
+                axis.text=element_text(size=11, color = "black"), # specs of the text in axis
                 axis.text.x = element_blank(),
                 legend.position = "bottom", # legend down
                 #legend.title = element_blank(), # remove legend title,
-                legend.text = element_text(colour = "black", size = 9),
-                plot.title = element_markdown(size = 12,hjust = 0,lineheight = 1, 
+                legend.text = element_text(colour = "black", size = 11),
+                plot.title = element_markdown(size = 13,hjust = 0,lineheight = 1, 
                                               color = "black", 
                                               #family = 'Courier New'
                                               ),

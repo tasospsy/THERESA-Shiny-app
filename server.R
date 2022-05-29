@@ -38,9 +38,9 @@ shinyServer(function(input, output) {
         labs(title = "",
              x = "Number of estimated classes",
              y = "Information Criterion (IC)")+
-        theme_bw() + theme1 +
+        theme_minimal() + theme1 +
         theme(legend.position='none',
-              axis.text.x = element_text(size=11, color = "black")),
+              axis.text.x = element_text(size=12, color = "black")),
       tooltip = c('est.K', 'n'))
   })
   
