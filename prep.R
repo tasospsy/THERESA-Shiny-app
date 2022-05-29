@@ -13,7 +13,7 @@ load(url("https://github.com/tasospsy/THERESA-Shiny-app/blob/main/data/out-td.Rd
 colors <- RColorBrewer::brewer.pal(9, 'Paired')[c(3,4,7,8)]
 theme1 <- theme(plot.background = element_rect(fill = "white", color = NA), #background color
                 text = element_text(
-                family = "Courier New", 
+                #family = "Courier New", 
                                     color = "black"), # color of all text in the plot 
                 #plot.title = element_text(hjust = 0.5, color = "black", size = 12), # specs of the title
                 strip.text = element_text(colour = "black", size = 14), # specs of the text inside plot
@@ -27,7 +27,9 @@ theme1 <- theme(plot.background = element_rect(fill = "white", color = NA), #bac
                 #legend.title = element_blank(), # remove legend title,
                 legend.text = element_text(colour = "black", size = 9),
                 plot.title = element_markdown(size = 12,hjust = 0,lineheight = 1, 
-                                              color = "black", family = 'Courier New'),
+                                              color = "black", 
+                                              #family = 'Courier New'
+                                              ),
                                               strip.background =element_rect(fill="grey100")
                 )
 
